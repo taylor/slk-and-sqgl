@@ -2,9 +2,61 @@
 <html>
  <head>
   <link rel="stylesheet" href="stage.css">
+  <!--
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+  -->
+  <script type="text/javascript">
+
+    var sqwiggle_expanded=false;
+    function toggle_sqwiggle() {
+      if (sqwiggle_expanded == true) {
+        unexpand_sqwiggle();
+        sqwiggle_expanded=false;
+      } else {
+        expand_sqwiggle();
+        sqwiggle_expanded=true;
+      }
+    }
+
+    function expand_sqwiggle() {
+      var sqwiggle_iframe = document.getElementById('sqwiggle');
+      var slack_iframe = document.getElementById('slack');
+      slack_iframe.style.minHeight = "10%";
+      sqwiggle_iframe.style.minHeight = "90%";
+      //var sqwiggle_expander = document.getElementById('sqwiggle_expander')
+      //sqwiggle_expander.textContent = "&#9650;";
+
+      document.getElementById('sqwiggle_expander_expand').hidden=true;
+      document.getElementById('sqwiggle_expander_unexpand').hidden=false;
+    }
+
+    function unexpand_sqwiggle() {
+      var sqwiggle_iframe = document.getElementById('sqwiggle')
+      var slack_iframe = document.getElementById('slack')
+      sqwiggle_iframe.style.minHeight = "20%";
+      slack_iframe.style.minHeight = "80%";
+
+
+      document.getElementById('sqwiggle_expander_expand').hidden=false;
+      document.getElementById('sqwiggle_expander_unexpand').hidden=true;
+    }
+  </script>
+
  </head>
- <body>
-   <iframe src="https://slack.com/messages" seamless nwdisable nwfaketop></iframe>
-  <script src="stage.js"></script>
+ <body onload="javascript:document.getElementById('sqwiggle_expander_unexpand').hidden=true;">
+   <iframe id="sqwiggle" src="https://app.sqwiggle.com" seamless nwdisable nwfaketop></iframe>
+   <!--<hr style="border: 0 none; clear: both; display: block;"/>-->
+   <div id="sqwiggle_expander_expand">
+     <!--<p style="min-height: 2px; width: 10px;margin:1px; padding: 5px 8px; background: #4479BA; color: #FFF; ">-->
+     <a href="javascript:toggle_sqwiggle();" style="text-decoration:none">&#9660;</a>
+     <!--</p>-->
+ </div>
+ <div id="sqwiggle_expander_unexpand" style="hidden: true">
+   <!--<p style="min-height: 2px; width: 10px;margin:1px; padding: 5px 8px; background: #4479BA; color: #FFF; ">-->
+     <a href="javascript:toggle_sqwiggle();" style="text-decoration:none">&#9650;</a>
+   <!--</p>-->
+   </div>
+   <iframe id="slack" src="https://slack.com/messages" seamless nwdisable nwfaketop></iframe>
+   <script src="stage.js"></script>
  </body>
 </html>

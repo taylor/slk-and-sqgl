@@ -5,8 +5,15 @@ html, body {
   overflow: hidden;
 }
 
-iframe {
-  min-height: 100%;
+iframe#sqwiggle {
+  min-height: 20%;
+  top-margin: 2px;
+  width: 100%;
+  border-style: none;
+}
+
+iframe#slack {
+  min-height: 80%;
   width: 100%;
   border-style: none;
 }

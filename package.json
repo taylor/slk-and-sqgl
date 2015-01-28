@@ -1,20 +1,27 @@
 {
-  "name": "slk",
+  "name": "slk-and-sqwiggle",
   "version": "1.0.0",
-  "description": "Slack chrome-less wrapper",
+  "description": "Slack + Sqwiggle chrome-less wrapper",
   "keywords": [
     "node-webkit",
     "app",
 	"slack",
 	"slackhq",
 	"chat",
+  "sqwiggle",
 	"im"
   ],
+  "webkit": { "plugin": true},
+  "repository": { "type": "git", "url": "https://github.com/taylor/slk-and-sqgl" },
   "author": "Félix Saparelli <https://passcod.name>",
   "contributors": [
     {
       "name": "Félix Saparelli",
       "email": "slk@passcod.name"
+    },
+    {
+      "name": "Taylor Carpenter",
+      "email": "t@vulk.co"
     }
   ],
   "license": {
