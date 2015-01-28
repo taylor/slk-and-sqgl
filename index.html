@@ -45,18 +45,22 @@
  </head>
  <body onload="javascript:document.getElementById('sqwiggle_expander_unexpand').hidden=true;">
    <iframe id="sqwiggle" src="https://app.sqwiggle.com" seamless nwdisable nwfaketop></iframe>
-   <!--<hr style="border: 0 none; clear: both; display: block;"/>-->
    <div id="sqwiggle_expander_expand">
+   <hr class="expander"/>
+     <!--<hr style="border: 0 none; clear: both; display: block; height: 1px;"/>-->
      <!--<p style="min-height: 2px; width: 10px;margin:1px; padding: 5px 8px; background: #4479BA; color: #FFF; ">-->
-     <a href="javascript:toggle_sqwiggle();" style="text-decoration:none">&#9660;</a>
-     <!--</p>-->
+    <p style="text-align: center; padding: 0; border: 0 none; margin: 0;">
+     <a class="expander" href="javascript:toggle_sqwiggle();" style="text-decoration:none; color: #333;">&#9660;</a>
+    </p>
  </div>
  <div id="sqwiggle_expander_unexpand" style="hidden: true">
    <!--<p style="min-height: 2px; width: 10px;margin:1px; padding: 5px 8px; background: #4479BA; color: #FFF; ">-->
-     <a href="javascript:toggle_sqwiggle();" style="text-decoration:none">&#9650;</a>
-   <!--</p>-->
+    <p style="text-align: center; padding: 0; border: 0 none; margin: 0;">
+     <a class="unexpander" href="javascript:toggle_sqwiggle();" style="text-decoration:none; color: #333;">&#9650;</a>
+    </p>
+   <hr class="unexpander"/>
    </div>
    <iframe id="slack" src="https://slack.com/messages" seamless nwdisable nwfaketop></iframe>
-   <script src="stage.js"></script>
+   script src="stage.js"></script>
  </body>
 </html>
