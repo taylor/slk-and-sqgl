@@ -1,11 +1,11 @@
-# slk
+# slk-and-sqgl
 
-_Slack wrapper for use as desktop app._
+_Slack + Sqwiggle wrapper for use as desktop app._
 
-![Screenshot](https://i.imgur.com/D32V7Nb.png)
+![Screenshot](http://i.imgur.com/6B8llwY.png)
 
 Uses [node-webkit] to provide a single-purpose window
-onto Slack's web version.
+with Sqwiggle and Slack's web apps.
 
 Will not work with node-webkit < 0.10.
 
