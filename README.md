@@ -7,7 +7,7 @@ _Slack + Sqwiggle wrapper for use as desktop app._
 Uses [node-webkit] to provide a single-purpose window
 with Sqwiggle and Slack's web apps.
 
-Based on [slk](https://github.com/taylor/slk)
+Based on [slk](https://github.com/passcod/slk)
 
 NOTE: Will not work with node-webkit < 0.10.
 
