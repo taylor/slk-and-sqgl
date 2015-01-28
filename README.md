@@ -7,7 +7,9 @@ _Slack + Sqwiggle wrapper for use as desktop app._
 Uses [node-webkit] to provide a single-purpose window
 with Sqwiggle and Slack's web apps.
 
-Will not work with node-webkit < 0.10.
+Based on [slk](https://github.com/taylor/slk)
+
+NOTE: Will not work with node-webkit < 0.10.
 
 [node-webkit]: https://github.com/rogerwang/node-webkit
 [release]: https://github.com/taylor/slk-and-sqgl/releases
@@ -18,7 +20,7 @@ Will not work with node-webkit < 0.10.
 
 ```bash
 $ $package_manager install node-webkit
-$ git clone git://github.com/passcod/slk.git
+$ git clone git://github.com/taylor/slk-and-sqgl.git
 $ cd twd
 $ nw .
 ```
