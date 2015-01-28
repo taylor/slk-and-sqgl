@@ -21,9 +21,14 @@ NOTE: Will not work with node-webkit < 0.10.
 ```bash
 $ $package_manager install node-webkit
 $ git clone git://github.com/taylor/slk-and-sqgl.git
-$ cd twd
+$ cd slk-and-sqgl
 $ nw .
 ```
+Optionally build a NW package (zip file) with
+
+```./build.sh``
+
+which creates ~/slk-and-sqgl.nw.  Which can be ran with `nw ~/slk-and-sqgl.nw`
 
 ## legal
 
