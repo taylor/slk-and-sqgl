@@ -2,7 +2,7 @@
 
 _Slack + Sqwiggle wrapper for use as desktop app._
 
-![Screenshot](http://i.imgur.com/6B8llwY.png)
+![Screenshot](http://i.imgur.com/AzZ7y5A.png)
 
 Uses [node-webkit] to provide a single-purpose window
 with Sqwiggle and Slack's web apps.
