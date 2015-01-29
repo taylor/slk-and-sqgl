@@ -26,7 +26,7 @@ $ nw .
 ```
 Optionally build a NW package (zip file) with
 
-```./build.sh``
+```./build.sh```
 
 which creates ~/slk-and-sqgl.nw.  Which can be ran with `nw ~/slk-and-sqgl.nw`
 
