@@ -37,5 +37,4 @@ of, and copyrighted to, SlackHQ, Inc.
 
 Sqwiggle owns some stuff also.
 
-All other files are released in the Public Domain as per
-my [policy](https://passcod.name/PUBLIC.txt).
+All other files are released in the Public Domain as per this [policy](https://passcod.name/PUBLIC.txt).
