@@ -1,6 +1,6 @@
 {
-  "name": "slk-and-sqwiggle",
-  "version": "1.0.0",
+  "name": "slk-and-sqgl",
+  "version": "1.0.1",
   "description": "Slack + Sqwiggle chrome-less wrapper",
   "keywords": [
     "node-webkit",

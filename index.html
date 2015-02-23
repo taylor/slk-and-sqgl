@@ -40,6 +40,15 @@
       document.getElementById('sqwiggle_expander_expand').hidden=false;
       document.getElementById('sqwiggle_expander_unexpand').hidden=true;
     }
+
+    function reload_slack() {
+      document.getElementById('slack').src=document.getElementById('slack').src
+      document.getElementById('sqwiggle').src=document.getElementById('sqwiggle').src
+    }
+
+    function history_back_slack() {
+      window.history.back();
+    }
   </script>
 
  </head>
@@ -50,17 +59,17 @@
      <!--<hr style="border: 0 none; clear: both; display: block; height: 1px;"/>-->
      <!--<p style="min-height: 2px; width: 10px;margin:1px; padding: 5px 8px; background: #4479BA; color: #FFF; ">-->
     <p style="text-align: center; padding: 0; border: 0 none; margin: 0;">
-     <a class="expander" href="javascript:toggle_sqwiggle();" style="text-decoration:none; color: #A09A9F;">&#9660;</a>
+     <a class="unexpander" href="javascript:toggle_sqwiggle();" style="text-decoration:none; color: #A09A9F;">&#9650;</a>&nbsp;&nbsp;<a href="javascript:reload_slack();" style="text-decoration:none; color: #A09A9F;">&#10227;</a>
     </p>
  </div>
  <div class="expander" id="sqwiggle_expander_unexpand" style="hidden: true; margin-bottom: -0.1em;">
    <!--<p style="min-height: 2px; width: 10px;margin:1px; padding: 5px 8px; background: #4479BA; color: #FFF; ">-->
     <p style="text-align: center; padding: 0; border: 0 none; margin: 0;">
-     <a class="unexpander" href="javascript:toggle_sqwiggle();" style="text-decoration:none; color: #A09A9F;">&#9650;</a>
+     <a class="unexpander" href="javascript:toggle_sqwiggle();" style="text-decoration:none; color: #A09A9F;">&#9650;</a>&nbsp;&nbsp;<a href="javascript:reload_slack();" style="text-decoration:none; color: #A09A9F;">&#10227;</a>
     </p>
    <hr class="unexpander"/>
    </div>
    <iframe id="slack" src="https://slack.com/messages" seamless nwdisable nwfaketop></iframe>
-   script src="stage.js"></script>
+   <script src="stage.js"></script>
  </body>
 </html>
